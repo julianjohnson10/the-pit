@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/the-pit/static/css/main.fb61abc6.css",
+    "main.js": "/the-pit/static/js/main.32e4f2fd.js",
+    "static/js/787.cf4ce631.chunk.js": "/the-pit/static/js/787.cf4ce631.chunk.js",
+    "index.html": "/the-pit/index.html",
+    "main.fb61abc6.css.map": "/the-pit/static/css/main.fb61abc6.css.map",
+    "main.32e4f2fd.js.map": "/the-pit/static/js/main.32e4f2fd.js.map",
+    "787.cf4ce631.chunk.js.map": "/the-pit/static/js/787.cf4ce631.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb61abc6.css",
+    "static/js/main.32e4f2fd.js"
+  ]
+}
