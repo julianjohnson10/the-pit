@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Title = () => {
    const [title, setTitle] = useState("Who are you?");
 
-   return <p className="text">{title}</p>;
+   return <p className="gametext text">{title}</p>;
 }
 
 export default Title;

@@ -1,15 +1,17 @@
 import "./App.scss";
-import Title from "./components/Title";
+import GameText from "./components/GameText";
+import { PrimaryButton } from "@fluentui/react";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="game-title">THE PIT</h1>
+      <p className="game-title">THE PIT</p>
       <div className="game-frame">
-        <Title />
-        
-        <input>
-        </input>
+        <GameText />
+        <div className="controls">
+          <input className="textfield"></input>
+          <PrimaryButton text="Enter" style={{ height: "40px" }} />
+        </div>
       </div>
     </div>
   );
