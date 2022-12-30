@@ -16,9 +16,10 @@ function App() {
         <p className="game-title">THE PIT</p>
       </div>
       <div className="game-frame">
-        <GameText />
-        <input className="input-text" autoFocus></input>
-        
+        <div className="chatbox">
+          <GameText />
+          <input className="input-text" autoFocus></input>
+        </div>
       </div>
     </div>
   );

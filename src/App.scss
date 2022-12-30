@@ -41,16 +41,19 @@
 
 .input-text {
   color: #40ff00;
-  font-family: 'Courier New', Courier, monospace;
   background-color: #555;
   border: none;
-  caret-shape: block;
-  // caret-shape: block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
 }
 
 .input-text:focus {
   // background-color: none;
   outline: none;
+}
+
+.chatbox {
+  display: flex;
 }
 
 .controls {
