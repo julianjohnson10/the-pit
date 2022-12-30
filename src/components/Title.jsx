@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 const Title = () => {
-   const [title, setTitle] = useState("Click here");
+   const [title, setTitle] = useState("Who are you?");
 
-   return <h2 className="response" onClick={() => setTitle("New title")}>{title}</h2>;
+   return <p className="text">{title}</p>;
 }
 
 export default Title;

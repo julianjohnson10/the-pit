@@ -1,26 +1,18 @@
-import "./App.css";
+import "./App.scss";
 import Title from "./components/Title";
 
 function App() {
-
-  function startGame() {
-
-  }
-
   return (
     <div className="App">
-      <div className="App-header">
-        <h1 className="game-title">THE PIT</h1>
-        <div className="game-menu">
-          <Title />
-          <input className="textfield" />
-        </div>
+      <h1 className="game-title">THE PIT</h1>
+      <div className="game-frame">
+        <Title />
+        
+        <input>
+        </input>
       </div>
     </div>
   );
-  
 }
-
-
 
 export default App;
