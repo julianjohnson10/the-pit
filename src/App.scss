@@ -40,12 +40,33 @@
 }
 
 .input-text {
+
   color: #40ff00;
   background-color: #555;
+  height: 20px;
+  width: fit-content;
   border: none;
   font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
 }
+
+.input-text.cursor {
+  position: relative;
+}
+
+.input-text.cursor i {
+  position: absolute;
+  width: 1px;
+  height: 20%;
+
+}
+
+.input-text.cursor {
+  position: relative;
+}
+
+
+
 
 .input-text:focus {
   // background-color: none;
@@ -54,28 +75,21 @@
 
 .chatbox {
   display: flex;
+  padding:10px;
+  padding-left: 20px;
 }
 
-.controls {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 500px;
-}
-
-.textfield {
-  height: 40px;
-  width:  300px;
-}
+// .controls {
+//   display: flex;
+//   justify-content: space-between;
+//   margin-left: 40px;
+//   margin-right: 40px;
+//   margin-top: 500px;
+// }
 
 .gametext {
   font-family: 'Courier New', Courier, monospace;
-  padding-left: 20px;
-  color: #40ff00
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  padding-top: 2px;
+  color: #40ff00;
+  margin: 0;
 }
