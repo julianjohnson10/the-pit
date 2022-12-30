@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-const Title = () => {
-   const [title, setTitle] = useState("Who are you?");
+const GameText = () => {
+   const [title, setTitle] = useState("What is your name?");
 
-   return <p className="gametext text">{title}</p>;
+   return <p className="gametext text" onChange={event => setTitle(event.target.value)}>{title}</p>;
 }
 
-export default Title;
+export default GameText;

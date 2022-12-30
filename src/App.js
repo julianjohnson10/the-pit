@@ -1,17 +1,24 @@
 import "./App.scss";
 import GameText from "./components/GameText";
-import { PrimaryButton } from "@fluentui/react";
+import { useState } from "react";
 
 function App() {
+  const [message, setMessage] = useState("");
+  const [updated, setUpdated] = useState(message);
+
+  const handleChange = (event) => {
+    setMessage(event.target.value);
+  };
+
   return (
     <div className="App">
-      <p className="game-title">THE PIT</p>
+      <div className="title-banner">
+        <p className="game-title">THE PIT</p>
+      </div>
       <div className="game-frame">
         <GameText />
-        <div className="controls">
-          <input className="textfield"></input>
-          <PrimaryButton text="Enter" style={{ height: "40px" }} />
-        </div>
+        <input className="input-text" autoFocus></input>
+        
       </div>
     </div>
   );
