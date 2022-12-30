@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -11,6 +13,39 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.game-menu {
+  height: 200px;
+  width: 600px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #555;
+}
+
+.response {
+  user-select: none;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.game-title {
+  font-family: 'Creepster';
+  color: red;
+  box-shadow: 100px;
+  /* box-sizing: border-box; */
+  text-shadow: 100px;
+  user-select: none;
+}
+
+.textfield {
+  height: 20px;
+  width:  300px;
 }
 
 .App-header {
