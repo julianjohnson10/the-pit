@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Source+Sans+Pro:wght@400;600;700&display=swap');
-
 .App {
   display: grid;
   place-items: center;
@@ -29,24 +28,34 @@
   width: 600px;
   border-radius: 10px;
   margin-bottom: 600px;
-  background-color: #555;
+  // background-color: #555;
+  -webkit-box-shadow: 0 2px 10px 1px rgba(255, 0, 0, 0.5);
+  background-image: url('../public/assets/images/console_background.png');
+  background-size: cover;
   border-style: solid;
   border-width: 1px;
-  box-shadow: 5px 5px 5px black;
+  // box-shadow: 5px 5px 5px black;
 }
 
 .text {
   user-select: none;
 }
-
-.input-text {
+.consoleCursor {
+  padding-top: 2px;
+}
+.consoleInput {
   color: #40ff00;
-  background-color: #555;
+  background: rgba(255, 0, 0, 0);
   height: 20px;
   width: fit-content;
   border: none;
   font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
+}
+
+.chat-prompt {
+  display: flex;
+  padding: 2px;
 }
 
 .input-text.cursor {
@@ -57,26 +66,31 @@
   position: absolute;
   width: 1px;
   height: 20%;
-
 }
 
 .input-text.cursor {
   position: relative;
 }
 
+.consoleOutputEof {
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  width: 1px;
+}
 
-
-
-.input-text:focus {
+input:focus {
   // background-color: none;
   outline: none;
 }
 
-.chatbox {
-  display: flex;
-  padding:10px;
-  padding-left: 20px;
-}
+// .chatbox {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: left;
+//   padding:10px;
+//   padding-left: 20px;
+// }
 
 // .controls {
 //   display: flex;
@@ -86,9 +100,9 @@
 //   margin-top: 500px;
 // }
 
-.gametext {
+.consoleOutput {
   font-family: 'Courier New', Courier, monospace;
-  padding-top: 2px;
+  padding: 2px;
   color: #40ff00;
   margin: 0;
 }

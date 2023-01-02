@@ -1,33 +1,24 @@
 import "./App.scss";
-import GameText from "./components/Console";
 import { useRef, useState } from "react";
-import Console from "./components/Console";
+import ConsoleInput from "./components/ConsoleInput";
+import ConsoleOutput from "./components/ConsoleOutput";
 
 function App() {
-
-  const inputRef = useRef(null);
 
   return (
     <div
       className="App"
-      onClick={() => {
-        inputRef.current.focus();
-      }}
     >
       <div className="title-banner">
         <p className="game-title">THE PIT</p>
       </div>
       <div className="game-frame">
-        <div className="chatbox">
-          <Console />
-          <input
-            ref={inputRef}
-            className="input-text"
-            autoFocus={true}
-            onBlur={({ target }) => target.focus()}
-          />
+        <div className="console-output">
+          <ConsoleOutput />
         </div>
-        {/* <button>Hello</button> */}
+        <div className="console-input">
+          <ConsoleInput />
+        </div>
       </div>
     </div>
   );
