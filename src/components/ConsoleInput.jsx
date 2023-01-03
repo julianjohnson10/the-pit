@@ -9,9 +9,9 @@ const ConsoleInput = ({
 }) => (
   <div>
     <form onSubmit={handleSubmit} className="chat-prompt">
-      <div className="consoleInput consoleCursor">$/></div>
+      <div className="consoleInput consoleCursor text">$</div>
       <input
-        className="consoleInput"
+        className="consoleInput text"
         name="consoleInput"
         value={input}
         onChange={handleChange}
