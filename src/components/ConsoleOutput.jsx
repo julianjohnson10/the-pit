@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const ConsoleOutput = ({ output, eof }) => (
   <div className="consoleOutput text">
-    <div>{output}</div>
+    <p>{output}</p>
     <div ref={eof} className="consoleOutputEof">
       EOF
     </div>

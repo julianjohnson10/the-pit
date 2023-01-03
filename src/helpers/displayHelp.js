@@ -1,7 +1,7 @@
 const displayHelp = (updateOutput) => {
-    const output = `HELP TEXT GOES HERE`;
-    updateOutput(output, 'new');
-    console.log(output)
-    return null;
+  const output = `$ help:
+`;
+  updateOutput(output, "append");
+  return null;
 };
 export default displayHelp;
