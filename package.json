@@ -1,7 +1,7 @@
 {
   "name": "the-pit",
   "version": "0.1.0",
-  "homepage": "https://julianjohnson10.github.io/the-pit",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@fluentui/react": "^8.104.1",
@@ -15,17 +15,21 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
     "sass": "^1.57.1",
     "web-vitals": "^2.1.4"
   },
+  "main": "public/electron.js",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "concurrently -k \"cross-env BROWSER=none npm start\" \"npm:electron\"",
+    "electron": "electron ."
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +50,11 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "concurrently": "^7.6.0",
+    "cross-env": "^7.0.3",
+    "electron": "^22.0.0",
+    "electron-is-dev": "^2.0.0",
+    "gh-pages": "^4.0.0",
+    "wait-on": "^7.0.1"
   }
 }

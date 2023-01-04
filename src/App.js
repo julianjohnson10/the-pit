@@ -31,7 +31,7 @@ function App() {
   const updateOutput = (s, mode) => {
     if (mode === "append") {
       const maxLines = 30;
-      const splitStdOutput = Output.split('\n');
+      const splitStdOutput = Output.split("\n");
       const truncStdOutput = splitStdOutput
         .slice(Math.max(splitStdOutput.length - maxLines, 0))
         .join(String.fromCharCode(10));
@@ -44,21 +44,22 @@ function App() {
   return (
     <div className="App">
       <div className="title-banner">
-        <p className="game-title">THE PIT</p>
+        <p className="game-title text">THE PIT</p>
       </div>
-      <div className="game-frame">
-        <div className="console-output">
-          <ConsoleOutput output={Output} eof={eof} />
+      <div className="game-wrapper">
+        <div className="game-frame">
+          <div className="console-output">
+            <ConsoleOutput output={Output} eof={eof} />
+          </div>
+          <div className="console-input">
+            <ConsoleInput
+              input={Input}
+              handleSubmit={handleSubmit}
+              handleChange={handleChange}
+              consoleInputRef={consoleInputRef}
+            />
+          </div>
         </div>
-        <div className="console-input">
-          <ConsoleInput
-            input={Input}
-            handleSubmit={handleSubmit}
-            handleChange={handleChange}
-            consoleInputRef={consoleInputRef}
-          />
-        </div>
-        
       </div>
     </div>
   );
